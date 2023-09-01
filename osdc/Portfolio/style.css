@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* it is applicable for all elements on the web page */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    /* outline-style: dotted; */
+}
+
+/* this is applicable for the HTML elements */
+:root{
+    --text-color:#f5f5f5;
+    --hover-color:#12f7ff;
+    --bg-color:#250821;
+    --secon-bg-color:#292e33;
+    --big-font:2.5rem;
+    --norma-font:2rem;
+    --neon-box-shadow:0 0 .5rem #12f7ff;
+    --h2-font:3rem;
+    --font-neno-text-shadown:0 0 10px rgba(18,247,255,0.3),
+    0 0 20px rgba(18,247,255,0.3),
+    0 0 30px rgba(18,247,255,0.3),
+    0 0 40px rgba(18,247,255,0.3),
+    0 0 70px rgba(18,247,255,0.3),
+    0 0 80px rgba(18,247,255,0.3),
+    0 0 100px rgba(18,247,255,0.3),
+    0 0 150px rgba(18,247,255,0.3);
+}
+/* it is applicable for all the body */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/*  */
+header {
+    display: flex;
+    /* this make changes in order to brings the content in the center of the page */
+    justify-content: center;
+    /* this make changes in order to brings space between the content  */
+    justify-content:space-between;
+
+    align-items: center;
+    width:auto;
+    padding: 20px 10%;
+}
+
+.logo
+{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+span{
+    color: var(--hover-color);
+}
+
+.navlist{
+ display: flex;
+ flex-direction: row;
+ list-style: none;
+
+}
+
+.navlist a{
+color: var(--text-color);
+font-weight: 500;
+padding: 10px 20px;
+}
+
+.navlist a:hover
+{
+    color:var(--hover-color);
+    text-shadow:0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6); 
+}
+#menu-icon
+{
+    font-size: 1.8rem;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    background: var(--hover-color);
+    border-radius: 3px;
+    color:var(--secon-bg-color);
+    display: none;
+}
+ section{
+    padding: 100px 10%;
+}
+
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    grid-gap: 4em;
+} 
+
+.home-content{
+   max-width: 600px;
+}
+.home-content h1{ 
+    font-size: var(--big-font);
+    font-weight: 900;
+}
+
+.change-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.change-text h3{
+    display: inline-flex;
+    margin:0;
+    vertical-align: top;
+}
+.change-text h3 .word{
+ position:absolute;
+ display: flex;
+ opacity: 0;
+}
